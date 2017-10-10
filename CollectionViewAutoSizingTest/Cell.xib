@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -37,7 +37,6 @@
                         <color key="backgroundColor" red="0.062745098040000002" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="top" secondItem="xVv-8R-X0S" secondAttribute="top" constant="8" id="8OZ-WR-jOV"/>
-                            <constraint firstAttribute="width" constant="400" id="HsC-ui-WZQ"/>
                             <constraint firstItem="qgJ-ao-xAA" firstAttribute="top" secondItem="2l1-LH-x2u" secondAttribute="bottom" constant="8" id="IsA-Z4-Jwt"/>
                             <constraint firstItem="qgJ-ao-xAA" firstAttribute="leading" secondItem="2l1-LH-x2u" secondAttribute="leading" id="M8B-QA-l5i"/>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="leading" secondItem="xVv-8R-X0S" secondAttribute="leading" constant="8" id="Uva-eX-OCo"/>
@@ -59,7 +58,6 @@
             <connections>
                 <outlet property="descriptionLabel" destination="qgJ-ao-xAA" id="LIR-2K-fYY"/>
                 <outlet property="headerLabel" destination="2l1-LH-x2u" id="d2f-X8-QX5"/>
-                <outlet property="widthConstraint" destination="HsC-ui-WZQ" id="qEM-cp-uSG"/>
             </connections>
             <point key="canvasLocation" x="326" y="96"/>
         </collectionViewCell>

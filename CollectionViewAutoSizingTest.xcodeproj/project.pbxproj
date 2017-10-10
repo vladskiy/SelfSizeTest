@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296EC55C1F8CFE8000FAB8F7 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EC55B1F8CFE8000FAB8F7 /* Layout.swift */; };
 		A47B7AA61E38544800DAD9C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B7AA51E38544800DAD9C7 /* AppDelegate.swift */; };
 		A47B7AA81E38544800DAD9C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B7AA71E38544800DAD9C7 /* ViewController.swift */; };
 		A47B7AAB1E38544800DAD9C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47B7AA91E38544800DAD9C7 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		296EC55B1F8CFE8000FAB8F7 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		A47B7AA21E38544800DAD9C7 /* CollectionViewAutoSizingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewAutoSizingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47B7AA51E38544800DAD9C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A47B7AA71E38544800DAD9C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A47B7AB11E38544800DAD9C7 /* Info.plist */,
 				A47B7AB71E385F2A00DAD9C7 /* Cell.swift */,
 				A47B7AB81E385F2A00DAD9C7 /* Cell.xib */,
+				296EC55B1F8CFE8000FAB8F7 /* Layout.swift */,
 			);
 			path = CollectionViewAutoSizingTest;
 			sourceTree = "<group>";
@@ -102,7 +105,7 @@
 				TargetAttributes = {
 					A47B7AA11E38544800DAD9C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8NQ7AXAYPG;
+						DevelopmentTeam = 2562PX28CA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A47B7AA81E38544800DAD9C7 /* ViewController.swift in Sources */,
+				296EC55C1F8CFE8000FAB8F7 /* Layout.swift in Sources */,
 				A47B7AA61E38544800DAD9C7 /* AppDelegate.swift in Sources */,
 				A47B7AB91E385F2A00DAD9C7 /* Cell.swift in Sources */,
 			);
@@ -269,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8NQ7AXAYPG;
+				DEVELOPMENT_TEAM = 2562PX28CA;
 				INFOPLIST_FILE = CollectionViewAutoSizingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = th.co.sun.CollectionViewAutoSizingTest;
@@ -282,7 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8NQ7AXAYPG;
+				DEVELOPMENT_TEAM = 2562PX28CA;
 				INFOPLIST_FILE = CollectionViewAutoSizingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = th.co.sun.CollectionViewAutoSizingTest;
@@ -310,6 +314,7 @@
 				A47B7AB61E38544800DAD9C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
