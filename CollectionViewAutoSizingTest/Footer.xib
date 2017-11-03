@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NeX-Qm-bOt" customClass="Footer" customModule="CollectionViewAutoSizingTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVq-sh-W8c">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOt-Xu-hzR" userLabel="Footer">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oOt-Xu-hzR" secondAttribute="trailing" id="HHC-EH-RdG"/>
+                        <constraint firstAttribute="bottom" secondItem="oOt-Xu-hzR" secondAttribute="bottom" id="M5e-dm-IAa"/>
+                        <constraint firstItem="oOt-Xu-hzR" firstAttribute="top" secondItem="sVq-sh-W8c" secondAttribute="top" id="Y9l-sk-Cvb"/>
+                        <constraint firstItem="oOt-Xu-hzR" firstAttribute="leading" secondItem="sVq-sh-W8c" secondAttribute="leading" id="qSs-7G-xZK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sVq-sh-W8c" firstAttribute="top" secondItem="NeX-Qm-bOt" secondAttribute="top" id="ZhE-JR-n46"/>
+                <constraint firstAttribute="trailing" secondItem="sVq-sh-W8c" secondAttribute="trailing" id="du6-hQ-ed8"/>
+                <constraint firstAttribute="bottom" secondItem="sVq-sh-W8c" secondAttribute="bottom" id="flL-OO-h1J"/>
+                <constraint firstItem="sVq-sh-W8c" firstAttribute="leading" secondItem="NeX-Qm-bOt" secondAttribute="leading" id="laG-HK-LPm"/>
+            </constraints>
+            <connections>
+                <outlet property="footer" destination="oOt-Xu-hzR" id="dpD-LE-xyc"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

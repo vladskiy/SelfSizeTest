@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2tO-Zi-0G7" customClass="Cell3" customModule="CollectionViewAutoSizingTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-zU-bum">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-nf-Bxe">
+                                <rect key="frame" x="8" y="8" width="359" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="0cv-h2-90E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="375" id="9MV-7e-SWD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FEB-nf-Bxe" secondAttribute="bottom" id="AGd-xZ-ZhJ"/>
+                            <constraint firstItem="FEB-nf-Bxe" firstAttribute="top" secondItem="6ch-zU-bum" secondAttribute="topMargin" id="L8O-VD-Wyb"/>
+                            <constraint firstItem="FEB-nf-Bxe" firstAttribute="leading" secondItem="6ch-zU-bum" secondAttribute="leadingMargin" id="jL2-OY-EXa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FEB-nf-Bxe" secondAttribute="trailing" id="muT-X0-y6B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6ch-zU-bum" firstAttribute="leading" secondItem="2tO-Zi-0G7" secondAttribute="leading" id="CMe-OX-gPc"/>
+                <constraint firstItem="6ch-zU-bum" firstAttribute="top" secondItem="2tO-Zi-0G7" secondAttribute="top" id="GEh-TM-t1H"/>
+                <constraint firstAttribute="trailing" secondItem="6ch-zU-bum" secondAttribute="trailing" id="s7b-of-QOb"/>
+                <constraint firstAttribute="bottom" secondItem="6ch-zU-bum" secondAttribute="bottom" id="uTu-qL-wb4"/>
+            </constraints>
+            <connections>
+                <outlet property="widthConstraint" destination="9MV-7e-SWD" id="pC4-bl-PvF"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

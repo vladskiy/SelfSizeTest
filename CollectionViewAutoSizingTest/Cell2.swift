@@ -1,21 +1,21 @@
 //
-//  Cell.swift
+//  Cell2.swift
 //  CollectionViewAutoSizingTest
 //
-//  Created by Wasin Wiwongsak on 1/25/17.
+//  Created by Vladyslav Lypskyi on 11/10/2017.
 //  Copyright © 2017 Wasin Wiwongsak. All rights reserved.
 //
 
 import UIKit
 
-class Cell: UICollectionViewCell {
-  @IBOutlet weak var headerLabel: UILabel!
-  @IBOutlet weak var descriptionLabel: UILabel! {
+class Cell2: UICollectionViewCell {
+  
+  @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+  @IBOutlet weak var title: UILabel! {
     didSet {
-//      descriptionLabel.preferredMaxLayoutWidth = UIScreen.main.bounds.size.width - 2 * 12
+//      title.preferredMaxLayoutWidth = UIScreen.main.bounds.size.width - 2 * 12
     }
   }
-  @IBOutlet weak var widthConstraint: NSLayoutConstraint!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -29,5 +29,4 @@ class Cell: UICollectionViewCell {
 //    layoutAttributes.bounds.size.height = systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
 //    return layoutAttributes
 //  }
-  
 }

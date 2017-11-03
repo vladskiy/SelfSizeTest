@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell" customModule="CollectionViewAutoSizingTest" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gTV-IL-0wX" customClass="Cell" customModule="CollectionViewAutoSizingTest" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="400" height="134"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVv-8R-X0S">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="134"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l1-LH-x2u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l1-LH-x2u">
                                 <rect key="frame" x="8" y="8" width="384" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -37,6 +37,7 @@
                         <color key="backgroundColor" red="0.062745098040000002" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="top" secondItem="xVv-8R-X0S" secondAttribute="top" constant="8" id="8OZ-WR-jOV"/>
+                            <constraint firstAttribute="width" constant="400" id="HNx-1B-MT4"/>
                             <constraint firstItem="qgJ-ao-xAA" firstAttribute="top" secondItem="2l1-LH-x2u" secondAttribute="bottom" constant="8" id="IsA-Z4-Jwt"/>
                             <constraint firstItem="qgJ-ao-xAA" firstAttribute="leading" secondItem="2l1-LH-x2u" secondAttribute="leading" id="M8B-QA-l5i"/>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="leading" secondItem="xVv-8R-X0S" secondAttribute="leading" constant="8" id="Uva-eX-OCo"/>
@@ -58,6 +59,7 @@
             <connections>
                 <outlet property="descriptionLabel" destination="qgJ-ao-xAA" id="LIR-2K-fYY"/>
                 <outlet property="headerLabel" destination="2l1-LH-x2u" id="d2f-X8-QX5"/>
+                <outlet property="widthConstraint" destination="HNx-1B-MT4" id="O0s-2n-hPM"/>
             </connections>
             <point key="canvasLocation" x="326" y="96"/>
         </collectionViewCell>
